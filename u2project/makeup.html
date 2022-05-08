@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="makeup.css">
+    <style>
+       
+
+    
+    </style>
+</head>
+<body>
+    <img  id="header" src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt="">
+    <a href="https://play.google.com/store/apps/details?id=com.cosmatic.beauty.beautybebo"><img id="g" src="https://www.beautybebo.com/pub/media/bb-app.png" alt=""></a> 
+     <div id="container">
+         <div><img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt=""></div>
+         <div>
+            <input class="select" type="" placeholder="All Categories">
+         </div>
+         <div>
+             <input class="select" width="80%" type="text" placeholder="Enter your Search...">
+             <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+         </div>
+         <div>
+             <div id="fav">
+                 <i class="fa-solid fa-heart"></i>
+             </div>  
+         </div>
+         <div>
+             <a href="signin.html">  <div id="user"> <i class="fa-solid fa-user"></i></div></a>
+             <h3 id="acc">Sonu Sharma</h3>
+         </div>
+        
+     </div>
+     <div id="store">
+       <ul class="list">
+           <a href="makeup.html"><li>MAKEUP</li></a>
+           
+           <li>SKIN</li>
+           <li>HAIR</li>
+           <li>PERSNOL CARE</li>
+           <li>MOM & BABY CARE</li>
+           <li>FRAGRANCE</li>
+           <li>AYURVEDA</li>
+           <li>BRANDS</li>
+           <a href="cart.html">  <li id="cart">MY CART-$0.00</li></a>
+        
+ 
+ 
+       </ul>
+     </div>
+<select id="sort">
+    <option value="none">Sort By brand</option>
+    <option value="Mama Earth">Mama Earth</option>
+    <option value="Miss claire">Miss claire</option>
+    <option value="shades">shades</option>
+    <option value="nyaka">nyaka</option>
+    <option value="wow">wow</option>
+
+</select>
+    
+   <div class="products"></div>
+   <footer>
+    <div id ="fut">
+        <div id="futbox">
+            <div>
+                <div>
+                    <h4>CUSTOMER INFO </h4>
+                    <P>(+91)7877061041</P>
+                    <P>support@beautybebo.com</P>
+                    <P>sales@beautybebo.com</P>
+                    <P>Open time: 10:00AM - 7:00PM</P>
+                 
+                  </div>
+            </div>
+            <div>
+                <div>
+                    <h4>QUICK LINKS</h4>
+                  <P>About us</P>
+                  <P>Contact Us</P>
+                  <P>Terms & Conditions</P>
+                  <P>Return and Refun Policy</P>
+                  <p>Shipping Policy</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>CUSTOMER INFO </h4>
+                  <P>My Account</P>
+                  <P>Track your Order</P>
+                  <P>Order Return</P>
+                  <P>Wishlist</P>
+                  <p>News & Events</p>
+                  <p>FAQ</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h4>CATEGORIES</h4>
+                  <P>Makeup</P>
+                  <P>Skin</P>
+                  <P>Hair</P>
+                  <P>Personal Care</P>
+                  <p>Mom & Baby Care</p>
+                  <p>Fragrance</p>
+                  <p>Ayurveda</p>
+                  
+                </div>
+            </div>
+        </div>
+        
+        <div id="feet">
+            <div> 
+                <img  id="ft" src="https://www.beautybebo.com/pub/media/wysiwyg/payment.png" alt="">
+            </div>
+            <div>
+               <input id="int" type="text" placeholder="Signup for Newsletter">
+                  <button id="btn">Subscribe</button> 
+            </div>
+        </div>
+ </div>  
+</footer>
+</body>
+</html>
+<script>
+    var products_data=[
+       {
+        img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/8/181.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"shades"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/8/9/8904052409748-2.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"Miss claire"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/0/800897828363_02.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"522.00",
+       product_brand:"Mama earth"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/0/800897828363_02.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"622.00",
+       product_brand:"wow"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/7/57180618906087776895_rose__6_.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"shades"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/_/1_210_13.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"Miss claire"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/3/7/37_4_2.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"wow"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"Mama earth"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"Miss claire"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"Miss claire"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/_/5_90_5.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"Mama earth"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"Miss claire"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/1/8/181.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"mama earth"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/6/1/618a4rcg7il._sl1500_.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"wow"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"222.00",
+       product_brand:"nyaka"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"Mama Earth"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"nyaka"},
+
+        {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+        product_name:"Miss Claire Eyelash Glue - Clear Tone",
+       product_price:"322.00",
+       product_brand:"shades"},
+
+        {
+            img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"nyaka"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"nyaka"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+    
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+            
+            {img:"https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg",
+            product_name:"Miss Claire Eyelash Glue - Clear Tone",
+           product_price:"322.00",
+           product_brand:"Miss claire"},
+
+
+
+]
+
+
+localStorage.setItem("masai-ecom",JSON.stringify("products_data"));
+let cartLSData=JSON.parse(localStorage.getItem("masai-cart"))||[];
+var products=document.querySelector(".products");
+var filter=document.querySelector("select");
+
+function display(Data){
+    products.innerHTML=null;
+    Data.forEach(element => {
+        let card=document.createElement("div");
+        let img=document.createElement("img");
+        img.src=element.img;
+        var name=document.createElement("h2");
+        name.innerText=element.product_name;
+
+        let price=document.createElement("p")
+        price.textContent=  element.product_price
+
+        let brand=document.createElement("p")
+        brand.innerText= element.product_brand 
+
+        let button=document.createElement("button");
+        button.innerText="Add To Cart";
+      button.addEventListener("click",function(){
+        AddToCart(element)
+      })
+     card.append(img,name,price,brand,button)
+        products.append(card);
+    });
+}
+display(products_data);
+filter.addEventListener("change",function(){
+    if(filter.value=="none"){
+        display(products_data)
+    }
+    else{
+        var filtered=products_data.filter(function(element){
+           return element.product_brand==filter.value;
+        })
+        display(filtered)
+    }
+})
+function AddToCart(element){
+cartLSData.push(element);
+localStorage.setItem("masai-cart",JSON.stringify(cartLSData))
+alert("Product Is Added To Cart")
+}
+
+</script>

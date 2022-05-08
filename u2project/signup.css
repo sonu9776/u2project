@@ -1,0 +1,31 @@
+.main-cont{
+    width: 30%;
+    margin: auto;
+    
+}
+#submit{
+    width: 73%;
+    height: 30px;
+    border: none;
+    background-color: #dd0085;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+    .main-cont>td,tr{
+     line-height: 30px;
+   
+    }
+    #name{
+        padding: 8px 30px 8px 30px;
+    }
+    #email{
+        padding: 8px 30px 8px 30px;
+    }
+    #password{
+        padding: 8px 30px 8px 30px;
+    }
+    footer{
+        margin-top: 200px;
+    }

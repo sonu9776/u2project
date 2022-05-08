@@ -1,0 +1,49 @@
+.products{
+    display: grid;
+    margin: auto;
+    width: 90%;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows: auto;
+    
+}
+.products>div{
+   
+    border: 0.5px solid lightgray;
+}
+.products>div>img{
+    width: 100%;
+    height: 250px;
+}
+button{
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dd0085 ;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    line-height: 25px;
+}
+h2+p{
+    text-align: center;
+    line-height: 25px;
+}
+p+p{
+    text-align: center;
+    line-height: 25px;
+}
+h2+p{
+    line-height: 10px;
+}
+select{
+    margin:20px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    margin-left: 80px;
+}

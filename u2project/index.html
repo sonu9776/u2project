@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <style>
+      
+    .list>li:hover{
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <!-- headerstart -->
+    <img  id="header" src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg" alt="">
+   <a href="https://play.google.com/store/apps/details?id=com.cosmatic.beauty.beautybebo"><img id="g" src="https://www.beautybebo.com/pub/media/bb-app.png" alt=""></a> 
+    <div id="container">
+        <div><img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt=""></div>
+        <div>
+           <input class="select" type="" placeholder="All Categories">
+        </div>
+        <div>
+            <input class="select" width="80%" type="text" placeholder="Enter your Search...">
+            <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div>
+            <div id="fav">
+                <i class="fa-solid fa-heart"></i>
+            </div>  
+        </div>
+        <div>
+            <a href="signin.html">  <div id="user"> <i class="fa-solid fa-user"></i></div></a>
+            <h3 id="acc">My Account</h3>
+        </div>
+       
+    </div>
+    <div id="store">
+      <ul class="list">
+          <li>MAKEUP</li>
+          <li>SKIN</li>
+          <li>HAIR</li>
+          <li>PERSNOL CARE</li>
+          <li>MOM & BABY CARE</li>
+          <li>FRAGRANCE</li>
+          <li>AYURVEDA</li>
+          <li>BRANDS</li>
+         <li id="cart">MY CART-$0.00</li>
+
+
+      </ul>
+    </div>
+    <!-- headerend -->
+    <div id="banner">
+    <div>
+        <div> <h3><span><i class="fa-solid fa-list"></i></span> ALL CATEGORIES</h3></div>
+        <div> <p>Makeup</p></div>
+        <div>  <p>Skin</p></div>
+        <div> <p>Hair</p></div>
+        <div> <p>Personal Care</p></div>
+        <div> <p>Mom & Baby Care</p></div>
+        <div><p>Fragrance</p></div>
+       <div><p>Ayurveda</p></div>
+         
+    </div>
+
+    <div> 
+         <div class="slide-container"></div>
+    <div class="slide">
+        <img src="https://www.beautybebo.com/pub/media/mega-menu/slider-1.jpg" alt="">
+       
+    </div>
+    <div class="slide">
+        <img src="https://www.beautybebo.com/pub/media/mega-menu/slider-3.jpg" alt="">
+       
+    </div>
+    <div class="slide">
+        <img src="https://www.beautybebo.com/pub/media/mega-menu/slider-2.jpg" alt="">
+       
+    </div>
+    <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+    <span class="arrow next" onclick="controller(+1)">&#10095;</span>
+</div>
+    </div>
+    <img id="ban" src="https://www.beautybebo.com/pub/media/blue_heaven.jpg" alt="">
+
+    <div id="main">
+        <div>
+<img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/7/5/759639c8904311903499__1_.jpg" alt="">
+<h4>WOW Skin Science Hyaluronic Acid Face Serum
+(200ml)</h4>
+<h3><span id="span1">$699</span> $630 <span id="span2">10% off</span></h3>
+<button>Add To Cart</button>
+         </div>
+        <div>
+            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/r/e/repair_shampoo_650-2_1_1.jpg" alt="">
+<h4>Dove Intense Repair Shampoo 650ml
+(200ml)</h4>
+<h3><span id="span1">$599</span> $399 <span id="span2">14% off</span></h3>
+<button>Add To Cart</button>
+        </div>
+        <div>
+            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/8/9/8908003416557_1.png" alt="">
+<h4>Organic Harvest Cleansing Milk With Essential Oils
+(100ml)</h4>
+<h3><span id="span1">$545</span> $491<span id="span2">10% off</span></h3>
+<button>Add To Cart</button>
+        </div>
+        <div>
+            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/5/3/53f7f568906080030383_rvn1.jpg" alt="">
+<h4>Organic Harvest Masseuscious Damage Control Cleanser With Acai Berry
+    (150ml)</h4>
+<h3><span id="span1">$1495.00</span> $1420.00<span id="span2">5% off</span></h3>
+<button>Add To Cart</button>
+        </div>
+    </div>
+    <div id="imgbox">
+        <div> <img src="https://www.beautybebo.com/pub/media/mega-menu/lotus.jpg" alt=""></div>
+        <div><img src="https://www.beautybebo.com/pub/media/mega-menu/beeone.jpg" alt=""> </div>
+    </div>
+
+    <div id="main">
+        <div>
+<img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/2/7/277cf77missc00000081_1.jpg" alt="">
+<h4>Miss Claire Eyelash Glue - Clear Tone</h4>
+<h3><span id="span1">$350</span> $322<span id="span2">8% off</span></h3>
+<button>Add To Cart</button>
+         </div>
+        <div>
+            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/b/5b990e16902395773146_3.jpg" alt="">
+<h4>Maybelline New York Fit Me Primer - Dewy+Smooth</h4>
+<h3><span id="span1">$499</span> $475 <span id="span2">5% off</span></h3>
+<button>Add To Cart</button>
+        </div>
+        <div>
+            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/6/9/6902395735908_0.jpg" alt="">
+<h4>L'Oreal Paris Infallible Full Wear Concealer</h4>
+<h3><span id="span1">$799.00</span> $730.00<span id="span2">8% off</span></h3>
+<button>Add To Cart</button>
+        </div>
+        <div>
+            <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/5/1/51c18ra5qzs._sl1500_.jpg" alt="">
+<h4>Organic Harvest Masseuscious Damage Control Cleanser With Acai Berry
+    (150ml)</h4>
+<h3><span id="span1">$1495.00</span> $1420.00<span id="span2">5% off</span></h3>
+<button>Add To Cart</button>
+        </div>
+    </div>
+    <div id="i">
+       <img src="https://www.beautybebo.com/pub/media/mega-menu/homepage.jpg" alt="">
+    </div>
+    <div id="i">
+        <img src="https://www.beautybebo.com/pub/media/mega-menu/offer.gif" alt="">
+    </div>
+    <div id="line">
+        <h1>Welcome to Beauty Products Online Shopping India- Beauty Bebo</h1>
+        <p>If you are looking for a flawless radiant face outlook for a special occasion, then we have the perfect tips for you. As you must already know, the conspicuous flawless outlook you want for your wedding, a date, a dinner party or for a modelling competition is only achieved through makeup.</p>
+        <p>Don’t get me wrong, you are naturally beautiful, that’s obvious. But everyone else is, so how will you will you ensure that you are different? Read on for hot irresistible tips before you buy beauty products online!</p>
+        <h4>Clean Your Face First!</h4>
+        <p>Before embarking on any makeup, always ensure that your face is clean. Need some assistance in absolute cleaning? Visit our range of face wash beauty products online for your best pick. We have made it our duty to carefully select the best products for you, so that you don’t experience breaks and allergies after use. So now you can be confident that your buy cosmetic online shopping will be worth your time and effort.</p>
+        <p>Wondering then how you will make a choice among the spectrum available? Most of our products are purely natural in ingredient, so you can as well check for your favorite ingredient combination. If not sure, we are still here for you. We can help narrow down your options, together with you.</p>
+        <h4>>Apply a Moisturizer</h4>
+        <span>Read More</span>
+    </div>
+    <footer>
+        <div id ="fut">
+            <div id="futbox">
+                <div>
+                    <div>
+                        <h4>CUSTOMER INFO </h4>
+                        <P>(+91)7877061041</P>
+                        <P>support@beautybebo.com</P>
+                        <P>sales@beautybebo.com</P>
+                        <P>Open time: 10:00AM - 7:00PM</P>
+                     
+                      </div>
+                </div>
+                <div>
+                    <div>
+                        <h4>QUICK LINKS</h4>
+                      <P>About us</P>
+                      <P>Contact Us</P>
+                      <P>Terms & Conditions</P>
+                      <P>Return and Refun Policy</P>
+                      <p>Shipping Policy</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h4>CUSTOMER INFO </h4>
+                      <P>My Account</P>
+                      <P>Track your Order</P>
+                      <P>Order Return</P>
+                      <P>Wishlist</P>
+                      <p>News & Events</p>
+                      <p>FAQ</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h4>CATEGORIES</h4>
+                      <P>Makeup</P>
+                      <P>Skin</P>
+                      <P>Hair</P>
+                      <P>Personal Care</P>
+                      <p>Mom & Baby Care</p>
+                      <p>Fragrance</p>
+                      <p>Ayurveda</p>
+                      
+                    </div>
+                </div>
+            </div>
+            
+            <div id="feet">
+                <div> 
+                    <img  id="ft" src="https://www.beautybebo.com/pub/media/wysiwyg/payment.png" alt="">
+                </div>
+                <div>
+                   <input id="int" type="text" placeholder="Signup for Newsletter">
+                      <button id="btn">Subscribe</button> 
+                </div>
+            </div>
+     </div>  
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
+
